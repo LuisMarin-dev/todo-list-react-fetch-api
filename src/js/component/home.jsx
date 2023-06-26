@@ -27,7 +27,7 @@ const Home = () => {
           {tasks.map((task, index) => (
             <li key={index}>
               <span>{task}</span>
-              <span onClick={() => deleteTask(index)}>x</span>
+              <span onClick={() => deleteTask(index)} className="x-button">x</span>
             </li>
           ))}
         </ul>

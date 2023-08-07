@@ -4,7 +4,6 @@ body {
   display: flex;
   justify-content: center;
   background-image: url(../img/paper-texture.jpg);
-  /* background-color: rgba(245, 245, 220, 0.546); */
 }
 
 .header {
@@ -19,7 +18,9 @@ body {
   display: flex;
   flex-direction: column;
   border: solid rgba(128, 128, 128, 0.224) 0.5px;
-  box-shadow: 5px 0 5 px -4px rgba(0, 0, 0, 0.8), -5px 0 5px -4px rgba(0, 0, 0, 0.8);
+  /* box-shadow: 5px 0 5 px -4px rgba(0, 0, 0, 0.8), -5px 0 5px -4px rgba(0, 0, 0, 0.8); */
+  box-shadow: 2px 0px 3px, -2px 0px 3px;
+  color: rgba(0, 0, 0, 0.600);
 }
 
 .taskbox-container input {
@@ -27,9 +28,10 @@ body {
   height: 50px;
   background-color: transparent;
   border-color: transparent;
+  padding-left: 35px;
   font-size: 23px;
   font-weight: lighter;
-  padding-left: 25px;
+  color: rgba(0, 0, 0, 0.600);
 }
 
 .taskbox-container input:focus {
@@ -39,6 +41,7 @@ body {
 .taskbox-container input::placeholder {
   font-size: 23px;
   font-weight: lighter;
+  color: rgba(0, 0, 0, 0.600)
 }
 
 .taskbox-footer {
@@ -48,6 +51,7 @@ body {
   padding-left: 15px;
   border-top: solid 0.5px rgba(128, 128, 128, 0.224);
   font-size: 15px;
+  color: rgba(0, 0, 0, 0.4);
 }
 
 ul {
@@ -64,7 +68,7 @@ li {
   display: inline-flex;
   font-size: 23px;
   font-weight: lighter;
-  padding-left: 25px;    
+  padding-left: 35px;    
 }
 
 .x-button {
@@ -74,11 +78,18 @@ li {
   color: rgba(255, 0, 0, 0.381);
 }
 
+/* .x-button:hover {
+  color: rgb(255, 0, 0);
+} */
+
 .hide {
   display: none;
 }
 
-li:hover + .hide {
-  display: block;
-  color: red;
+li:hover .hide {
+  display: inline;
+  margin-left: auto;
+  margin-right: 10px;
+  cursor: pointer;
+  color: rgba(255, 0, 0, 0.477);
 }

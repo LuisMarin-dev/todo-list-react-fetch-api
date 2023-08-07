@@ -20,14 +20,14 @@ const Home = () => {
 
   return (
     <div className="main-container">
-      <h1 className="text-center mt-5 header">todo</h1>
+      <h1 className="text-center mt-5 header">todos</h1>
       <div className="taskbox-container">
         <input placeholder="Add todo" value={text} onChange={(e) => setText(e.target.value)} onKeyDown={handleKey}/>
         <ul>
           {tasks.map((task, index) => (
             <li key={index}>
               <span>{task}</span>
-              <span onClick={() => deleteTask(index)} className="x-button">x</span>
+              <span onClick={() => deleteTask(index)} className="x-button hide">x</span>
             </li>
           ))}
         </ul>

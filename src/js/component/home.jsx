@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-//create your first component
+//gotta make this fetch the api
 const Home = () => {
   const [tasks, setTasks] = useState([]);
   const [text, setText] = useState("");

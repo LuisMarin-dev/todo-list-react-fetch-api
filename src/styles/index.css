@@ -3,7 +3,7 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
-  background-image: url(../img/paper-texture.jpg);
+  /* background: center/cover url(../img/paper-texture.jpg) repeat; */
 }
 
 .header {
